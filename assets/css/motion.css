@@ -1,0 +1,7 @@
+/* Gentle appearance and scroll motion. Never hide anything before JS is ready. */
+html[data-endura-motion="on"] .endura-reveal:not(.is-visible){opacity:0;transform:translate3d(0,22px,0);}
+html[data-endura-motion="on"] .endura-reveal{transition:opacity .62s cubic-bezier(.2,.75,.2,1),transform .62s cubic-bezier(.2,.75,.2,1);will-change:opacity,transform;}
+html[data-endura-motion="on"] .endura-reveal.is-visible{opacity:1;transform:translate3d(0,0,0)}
+@keyframes enduraPageIn{from{opacity:.6;transform:translateY(9px)}to{opacity:1;transform:none}}
+html[data-endura-motion="on"] #main-content{animation:enduraPageIn .42s ease both}
+@media(prefers-reduced-motion:reduce){html[data-endura-motion="on"] .endura-reveal{opacity:1!important;transform:none!important;transition:none!important;will-change:auto!important}html[data-endura-motion="on"] #main-content{animation:none!important}}

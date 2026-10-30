@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 780"><defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#241044"/><stop offset=".55" stop-color="#1B0B37"/><stop offset="1" stop-color="#160A2C"/></linearGradient>
+ <linearGradient id="a" x2="1" y2="1"><stop stop-color="#F8F6FA"/><stop offset=".42" stop-color="#A795CE"/><stop offset="1" stop-color="#352253"/></linearGradient>
+ <linearGradient id="metal" x2="1" y2="1"><stop stop-color="#463464"/><stop offset=".45" stop-color="#150B25"/><stop offset="1" stop-color="#5C447E"/></linearGradient>
+ <linearGradient id="green" x2="1" y2="1"><stop stop-color="#D8FC55"/><stop offset=".5" stop-color="#B392FC"/><stop offset="1" stop-color="#8056CF"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#B392FC" stop-opacity=".42"/><stop offset="1" stop-color="#1B0B37" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter><filter id="shadow"><feGaussianBlur stdDeviation="12"/></filter></defs>
+ <rect width="1280" height="780" fill="url(#sky)"/><ellipse cx="630" cy="380" rx="570" ry="370" fill="url(#glow)"/>
+ <path d="M0 500Q280 430 520 470T1280 440V780H0" fill="#170927"/><g opacity=".27" fill="none" stroke="#B392FC"><path d="M0 580H1280M0 620H1280M0 680H1280M0 750H1280"/><path d="M200 490 0 780M480 490 400 780M800 490 890 780M1000 490l260 290"/></g>
+ <g opacity=".15"><path d="M70 500V340h60v160m30 0V290h40v210m50 0V370h60v130m42 0V315h75v185m45 0V400h60v100" fill="#9378B9"/></g>
+ <!-- illustrated car -->
+ <g transform="translate(80 180)"><ellipse cx="440" cy="435" rx="360" ry="43" fill="#000" opacity=".7" filter="url(#shadow)"/>
+ <path d="M85 335Q160 278 215 274l115-125q25-26 70-27l240-2q32 2 51 30l100 130q70 14 95 50l-4 95-83 22H155l-66-28z" fill="url(#metal)" stroke="#B392FC" stroke-width="5"/>
+ <path d="M254 272 355 158q13-10 36-10h235q17 0 30 12l96 113z" fill="url(#a)" opacity=".73"/>
+ <path d="M412 151 409 271m-200 7h544" stroke="#B392FC" stroke-width="4" opacity=".5"/>
+ <path d="M91 338h805l-10 58H97z" fill="#140B24"/><path d="M95 356q63-5 106 0l-16 27H95M770 356q63-6 117 1v25H790z" fill="#D8FC55" opacity=".9"/>
+ <circle cx="258" cy="428" r="76" fill="#140A23" stroke="#473066" stroke-width="18"/><circle cx="258" cy="428" r="45" fill="#8970AB" stroke="#C3AEEC" stroke-width="8"/>
+ <circle cx="724" cy="428" r="76" fill="#140A23" stroke="#473066" stroke-width="18"/><circle cx="724" cy="428" r="45" fill="#8970AB" stroke="#C3AEEC" stroke-width="8"/>
+ <path d="M90 360h810" stroke="#D8FC55" stroke-width="5" opacity=".55"/></g>
+ <!-- featured battery floating forefront -->
+ <g transform="translate(775 303)"><ellipse cx="200" cy="420" rx="210" ry="36" fill="#130823" opacity=".8" filter="url(#shadow)"/>
+ <path d="M34 95l290-22 47 45v270L64 413 34 372z" fill="url(#metal)" stroke="#8056CF" stroke-width="5"/>
+ <path d="M34 95 71 55l276-10-23 28z" fill="#372253"/><path d="M324 73 371 118l-12 24-40-35z" fill="#211039"/>
+ <path d="M100 38v31m167-39v29" stroke="#B392FC" stroke-width="28" stroke-linecap="round"/><path d="M60 156l265-19v199l-265 18z" fill="#281442" stroke="#8056CF" stroke-width="3"/>
+ <path d="M61 160l264-21v46L61 206z" fill="url(#green)"/><path d="M61 309l264-17v44L61 354z" fill="url(#green)"/>
+ <path d="M89 252h193" stroke="#D8FC55" stroke-width="4"/><path d="M89 274h131" stroke="#B392FC" stroke-width="3"/>
+ <path d="M94 172h54m7 0h30m-84 150h180" stroke="#F8F6FA" stroke-width="5" opacity=".7"/></g>
+ <circle cx="1020" cy="150" r="100" fill="#B392FC" opacity=".09" filter="url(#blur)"/><path d="M770 170c75-35 149-43 212-21" fill="none" stroke="#D8FC55" stroke-width="2" stroke-dasharray="4 15" opacity=".65"/>
+ </svg>

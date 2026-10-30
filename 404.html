@@ -1,0 +1,298 @@
+<!doctype html>
+<html dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="noindex, follow" name="robots"/>
+<meta content="#f6f4fa" name="theme-color"/>
+<title>صفحه پیدا نشد | Endura Battery</title>
+<style>
+:root {
+  color-scheme:light;
+  font-family:Vazirmatn,"Noto Sans Arabic",Tahoma,Arial,sans-serif;
+  --bg:#f6f4fa;
+  --ink:#2c1b40;
+  --muted:#776985;
+  --subtle:#8b7d99;
+  --accent:#8056cf;
+  --lime:#d8fc55;
+  --petal:#8056cf;
+  --wordmark:#231038;
+  --surface:#ffffff;
+  --outline:#e0d8e8;
+  --placeholder:#93879f;
+  --search-btn:#301849;
+  --search-btn-hover:#56317c;
+  --search-btn-ink:#ffffff;
+  --chip-bg:#eae3f2;
+  --chip-text:#56376c;
+  --chip-border:#ddd2e9;
+  --chip-hover:#ded0ed;
+  --number:#e5d9f1;
+  --number-shadow:#a88cc126;
+  --bubble:#2b1644;
+  --bubble-shadow:#34144828;
+  --glow-purple:rgba(179,146,252,.20);
+  --glow-lime:rgba(216,252,85,.20);
+  --search-shadow:0 18px 35px #3d125916;
+  --toggle-surface:rgba(255,255,255,.75);
+  --toggle-border:#ded3ea;
+  --toggle-hover:#ece3f7;
+}
+html[data-theme="dark"] {
+  color-scheme:dark;
+  --bg:#1b0b37;
+  --ink:#fbfaff;
+  --muted:#c1b1d5;
+  --subtle:#baa8cd;
+  --accent:#b392fc;
+  --petal:#b392fc;
+  --wordmark:#d8fc55;
+  --surface:#2a1848;
+  --outline:#5d4777;
+  --placeholder:#b5a3c9;
+  --search-btn:#d8fc55;
+  --search-btn-hover:#e7ff9a;
+  --search-btn-ink:#221334;
+  --chip-bg:#35204f;
+  --chip-text:#e7d8ff;
+  --chip-border:#604978;
+  --chip-hover:#492c6a;
+  --number:#52336f;
+  --number-shadow:#07010e88;
+  --bubble:#392251;
+  --bubble-shadow:#06000e65;
+  --glow-purple:rgba(128,86,207,.25);
+  --glow-lime:rgba(216,252,85,.07);
+  --search-shadow:0 18px 42px #05000d66;
+  --toggle-surface:rgba(57,35,86,.9);
+  --toggle-border:#695184;
+  --toggle-hover:#4a2e6a;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--bg);min-height:100%;scroll-behavior:smooth}
+body{margin:0;min-height:100vh;min-height:100svh;color:var(--ink);background:var(--bg)}
+a,button,input{font:inherit}
+button{cursor:pointer}
+a{text-decoration:none;color:inherit}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.error-page{
+  min-height:100vh;min-height:100svh;position:relative;overflow:hidden;isolation:isolate;
+  display:flex;flex-direction:column;
+  background:radial-gradient(ellipse at 95% 21%,var(--glow-purple),transparent 35%),
+             radial-gradient(ellipse at 0% 100%,var(--glow-lime),transparent 31%),var(--bg);
+  transition:background-color .25s ease,color .25s ease;
+}
+.page-header{
+  width:min(1440px,100%);margin:0 auto;
+  padding:42px clamp(26px,6vw,88px) 0;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  position:relative;z-index:3;
+}
+.brand-logo{width:clamp(146px,13.1vw,194px);height:auto;display:block;overflow:visible}
+.brand-logo .petal-top,.brand-mark .petal-top{fill:var(--lime)}
+.brand-logo .petal-left,.brand-logo .petal-right,.brand-logo .descriptor,
+.brand-mark .petal-left,.brand-mark .petal-right{fill:var(--petal)}
+.brand-logo .wordmark{fill:var(--wordmark)}
+.theme-toggle{
+  display:inline-flex;align-items:center;justify-content:center;gap:11px;
+  min-height:44px;padding:10px 15px;
+  color:var(--ink);background:var(--toggle-surface);
+  border:1px solid var(--toggle-border);border-radius:13px;
+  font-size:12px;font-weight:700;white-space:nowrap;
+  transition:background .2s,border-color .2s,transform .2s;
+}
+.theme-toggle:hover{background:var(--toggle-hover);transform:translateY(-1px)}
+.theme-toggle svg{width:18px;height:18px;flex:none;stroke:var(--accent)}
+.theme-toggle .sun-icon{display:none}
+html[data-theme="dark"] .theme-toggle .sun-icon{display:block}
+html[data-theme="dark"] .theme-toggle .moon-icon{display:none}
+.page-main{
+  width:min(1440px,100%);margin:auto;position:relative;z-index:2;
+  display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+  align-items:center;gap:clamp(36px,5.8vw,110px);
+  padding:35px clamp(26px,6vw,88px) 64px;
+}
+.copy{max-width:540px;min-width:0}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.01em}
+.eyebrow::before{content:"";display:block;width:22px;height:2px;background:var(--lime);border-radius:3px}
+h1{font-size:clamp(35px,3.25vw,48px);line-height:1.54;font-weight:900;letter-spacing:-.065em;margin:18px 0 11px}
+.copy>p{color:var(--muted);font-size:clamp(13px,1.15vw,16px);line-height:2.15;margin:0;max-width:520px}
+.finder-search{
+  margin:28px 0 0;display:flex;align-items:center;gap:10px;
+  width:min(100%,520px);padding:6px;background:var(--surface);
+  border-radius:16px;border:1px solid var(--outline);box-shadow:var(--search-shadow);
+  transition:background .2s,border-color .2s,box-shadow .2s;
+}
+.finder-search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px #b392fc35,var(--search-shadow)}
+.finder-search .search-icon{width:20px;height:20px;margin-right:11px;flex:none;color:var(--accent)}
+.finder-search input{
+  direction:rtl;text-align:right;border:0;background:transparent;min-width:0;flex:1;
+  padding:13px 2px;font-size:13px;color:var(--ink);outline:0;
+}
+.finder-search input::placeholder{color:var(--placeholder);opacity:1}
+.finder-search button{
+  border:0;border-radius:11px;background:var(--search-btn);color:var(--search-btn-ink);
+  font-size:13px;font-weight:700;padding:14px 22px;white-space:nowrap;
+  transition:background .18s,transform .18s;
+}
+.finder-search button:hover{background:var(--search-btn-hover);transform:translateY(-1px)}
+.finder-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:19px}
+.finder-links span{font-size:12px;color:var(--subtle);margin-left:4px}
+.finder-links button{
+  font-size:11px;color:var(--chip-text);background:var(--chip-bg);
+  border:1px solid var(--chip-border);border-radius:100px;padding:10px 16px;
+  transition:background .18s;
+}
+.finder-links button:hover{background:var(--chip-hover)}
+.cta-line{margin-top:26px}
+.home-link{
+  display:inline-flex;align-items:center;gap:12px;background:var(--lime);color:#1c1230;
+  border-radius:13px;padding:17px 23px;font-size:13px;font-weight:900;
+  transition:transform .2s,box-shadow .2s;
+}
+.home-link:hover{transform:translateY(-2px);box-shadow:0 12px 25px #bad95c55}
+.finder-art{position:relative;min-width:0;height:clamp(330px,35vw,500px);display:grid;place-items:center;direction:ltr}
+.finder-number{
+  font:900 clamp(170px,23vw,335px)/1 Arial,sans-serif;letter-spacing:-.13em;
+  color:var(--number);transform:rotate(-9deg);text-shadow:0 19px 38px var(--number-shadow);
+  white-space:nowrap;user-select:none;
+}
+.finder-bubble{
+  position:absolute;top:12%;left:8%;background:var(--bubble);
+  border-radius:21px 21px 6px 21px;padding:17px;
+  transform:rotate(8deg);box-shadow:0 18px 39px var(--bubble-shadow);
+  animation:floatmark 3.5s ease-in-out infinite;
+}
+.finder-bubble .brand-mark{width:62px;height:62px;display:block;overflow:visible}
+.finder-mapdot{
+  position:absolute;right:16%;bottom:13%;width:94px;height:94px;
+  display:grid;place-items:center;border-radius:29px;background:var(--lime);
+  font:900 52px Arial,sans-serif;color:#271439;transform:rotate(-12deg);
+  box-shadow:0 15px 36px #9fae4f35;animation:floatmark 4s .7s ease-in-out infinite;
+}
+@keyframes floatmark{50%{translate:0 -10px}}
+@media(max-width:900px){
+  .page-main{grid-template-columns:minmax(0,1fr) minmax(0,.84fr);gap:15px}
+  h1{font-size:clamp(30px,4.3vw,46px)}
+  .finder-number{font-size:clamp(150px,23vw,260px)}
+  .finder-art{height:380px}
+  .finder-bubble{left:2%}
+  .finder-mapdot{right:2%}
+}
+@media(max-width:700px){
+  .page-header{padding:26px 26px 0}
+  .brand-logo{width:155px}
+  .page-main{display:flex;flex-direction:column;gap:11px;padding:13px 26px 46px;max-width:550px}
+  .finder-art{order:0;width:100%;height:clamp(240px,68vw,330px);flex:none}
+  .finder-number{font-size:clamp(175px,48vw,255px)}
+  .finder-bubble{top:11%;left:12%;padding:12px;border-radius:17px 17px 5px 17px}
+  .finder-bubble .brand-mark{width:45px;height:45px}
+  .finder-mapdot{width:71px;height:71px;font-size:42px;bottom:14%;right:14%;border-radius:21px}
+  .copy{order:1;width:100%;max-width:none}
+  .eyebrow{font-size:11px}
+  h1{font-size:clamp(30px,7.7vw,42px);line-height:1.55;margin:12px 0 9px}
+  .copy>p{font-size:13px;line-height:2.1}
+  .finder-search{width:100%;margin-top:20px}
+  .finder-search button{padding:13px 15px;font-size:12px}
+  .finder-search input{font-size:12px}
+  .finder-links{margin-top:17px}
+  .cta-line{margin-top:21px}
+  .home-link{padding:14px 18px;font-size:12px}
+  .theme-toggle{padding:9px 12px;font-size:11px}
+}
+@media(max-width:380px){
+  .page-header{padding:20px 20px 0}
+  .page-main{padding:12px 20px 38px}
+  .finder-art{height:225px}
+  .finder-number{font-size:178px}
+  .finder-links span{width:100%}
+  .finder-links{gap:7px}
+  h1{font-size:30px}
+  .theme-toggle{gap:6px;padding:9px 10px}
+  .brand-logo{width:135px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style><script>// Apply the saved theme before rendering to prevent a theme flash.
+(function(){
+  let selected = null;
+  try { selected = localStorage.getItem('endura-theme'); } catch(e) {}
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.dataset.theme = (selected==='dark'||selected==='light') ? selected : (prefersDark?'dark':'light');
+})();</script>
+
+</head>
+<body>
+<main class="error-page">
+<header class="page-header"><a aria-label="بازگشت به صفحه اصلی Endura" href="./#/"><svg aria-label="Endura Battery" class="brand-logo" role="img" viewbox="0 0 806 222" xmlns="http://www.w3.org/2000/svg">
+<title>Endura Battery</title>
+<path class="petal-top" d="M108 11 Q111 11 114 14 L152 48 Q155 50 155 53 L155 72 Q155 75 152 78 L113 110 Q108 114 103 110 L64 78 Q62 76 62 73 L62 52 Q62 49 65 47 L102 14 Q105 11 108 11 Z M108 45 L90 62 L108 79 L126 62 Z" fill="#D8FC55" fill-rule="evenodd"></path>
+<path class="petal-left" d="M48 78 Q50 77 53 80 L97 121 Q99 123 99 126 L99 204 Q99 209 95 209 Q92 209 89 206 L14 140 Q12 138 12 135 L12 112 Q12 109 15 106 L45 80 Q47 78 48 78 Z M56 108 L39 124 L72 153 L72 124 Z" fill="#B392FC" fill-rule="evenodd"></path>
+<path class="petal-right" d="M167 78 Q169 77 172 80 L201 106 Q203 109 203 112 L203 136 Q203 139 200 141 L124 207 Q121 210 118 209 Q115 208 115 204 L115 126 Q115 123 117 121 L163 80 Q165 78 167 78 Z M159 108 L143 124 L143 154 L176 124 Z" fill="#B392FC" fill-rule="evenodd"></path>
+<path class="wordmark" d="M241 51 H312 V67 H258 V80 H306 V95 H258 V108 H312 V124 H241 Z M325 51 H340 L390 97 V51 H407 V124 H390 L342 77 V124 H325 Z M420 51 H466 C490 51 506 66 506 88 C506 110 489 124 467 124 H420 V76 H437 V108 H467 C481 108 489 100 489 88 C489 75 482 67 466 67 H420 Z M516 51 H533 V95 C533 105 541 109 556 109 C573 109 581 105 581 95 V51 H598 V95 C598 116 581 125 557 125 C533 125 516 116 516 96 Z M610 51 H664 C681 51 692 61 692 76 C692 89 680 98 665 99 L686 124 H667 L643 100 H626 V124 H610 V85 L626 76 V84 H664 C671 84 675 81 675 76 C675 71 671 67 664 67 H610 Z M697 124 L737 51 H754 L795 124 H776 L746 72 L716 124 Z" fill="#D8FC55" fill-rule="evenodd"></path>
+<path class="descriptor" d="M242 155 H259 C265 155 267 158 267 162 C267 165 266 167 264 168 C267 169 269 171 269 175 C269 179 265 181 259 181 H242 Z M246 159 V166 H258 C261 166 263 165 263 163 C263 160 261 159 258 159 Z M246 170 V177 H259 C263 177 265 176 265 174 C265 171 263 170 259 170 Z M290 181 L303 155 H307 L320 181 H316 L313 175 H297 L294 181 Z M300 171 H310 L305 160 Z M339 155 H364 V159 H354 V181 H350 V159 H339 Z M386 155 H411 V159 H401 V181 H397 V159 H386 Z M435 155 H458 V159 H439 V167 H456 V170 H439 V178 H458 V181 H435 Z M484 155 H500 C506 155 509 158 509 164 C509 168 507 171 502 172 L508 181 H504 L498 173 H488 V181 H484 Z M488 159 V169 H499 C503 169 505 167 505 164 C505 161 503 159 499 159 Z M531 155 H535 L544 168 L553 155 H558 L546 172 V181 H542 V172 Z" fill="#B392FC" fill-rule="evenodd"></path>
+</svg></a><button aria-label="تغییر حالت نمایش" aria-pressed="false" class="theme-toggle" id="themeToggle" type="button"><svg aria-hidden="true" class="moon-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5 8.6 8.6 0 1 0 20.5 14.2Z"></path></svg><svg aria-hidden="true" class="sun-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg><span id="themeLabel">حالت تاریک</span></button></header>
+<section aria-labelledby="error-title" class="page-main">
+<div class="copy">
+<span class="eyebrow">خطای ۴۰۴ | صفحه پیدا نشد</span>
+<h1 id="error-title">اینجا نیست؛<br/>با هم پیداش می‌کنیم.</h1>
+<p>ممکنه آدرس تغییر کرده باشه. اسم چیزی که دنبالش هستید رو جست‌وجو کنید یا از مسیرهای پیشنهادی کمک بگیرید.</p>
+<!-- این فرم با جست‌وجوی پیش‌فرض وردپرس سازگار است؛ برای سایت‌های دیگر action و name را تنظیم کنید. -->
+<form action="./" aria-label="جست‌وجو در سایت" class="finder-search" method="get" role="search">
+<svg aria-hidden="true" class="search-icon" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16.4 16.4 4 4"></path></svg>
+<input aria-label="عبارت جست‌وجو" id="searchTerm" name="s" placeholder="دنبال چه چیزی می‌گردید؟" required="" type="search"/>
+<button type="submit">جست‌وجو ←</button>
+</form>
+<div aria-label="مسیرهای پیشنهادی" class="finder-links">
+<span>مسیرهای پیشنهادی:</span>
+<button data-search="محصولات" type="button">محصولات</button>
+<button data-search="درباره Endura" type="button">درباره ما</button>
+<button data-search="پشتیبانی" type="button">پشتیبانی</button>
+</div>
+<div class="cta-line"><a class="home-link" href="./#/">برگردیم به خانه ←</a></div>
+</div>
+<div aria-hidden="true" class="finder-art">
+<div class="finder-number">404</div>
+<div class="finder-bubble"><svg aria-label="Endura Battery" class="brand-mark" role="presentation" viewbox="0 0 215 222" xmlns="http://www.w3.org/2000/svg">
+<title>Endura Battery</title>
+<path class="petal-top" d="M108 11 Q111 11 114 14 L152 48 Q155 50 155 53 L155 72 Q155 75 152 78 L113 110 Q108 114 103 110 L64 78 Q62 76 62 73 L62 52 Q62 49 65 47 L102 14 Q105 11 108 11 Z M108 45 L90 62 L108 79 L126 62 Z" fill="#D8FC55" fill-rule="evenodd"></path>
+<path class="petal-left" d="M48 78 Q50 77 53 80 L97 121 Q99 123 99 126 L99 204 Q99 209 95 209 Q92 209 89 206 L14 140 Q12 138 12 135 L12 112 Q12 109 15 106 L45 80 Q47 78 48 78 Z M56 108 L39 124 L72 153 L72 124 Z" fill="#B392FC" fill-rule="evenodd"></path>
+<path class="petal-right" d="M167 78 Q169 77 172 80 L201 106 Q203 109 203 112 L203 136 Q203 139 200 141 L124 207 Q121 210 118 209 Q115 208 115 204 L115 126 Q115 123 117 121 L163 80 Q165 78 167 78 Z M159 108 L143 124 L143 154 L176 124 Z" fill="#B392FC" fill-rule="evenodd"></path>
+</svg></div>
+<div class="finder-mapdot">?</div>
+</div>
+</section>
+</main>
+<script>// Theme switching: saved locally; system preference is used on first visit.
+(function(){
+ const toggle = document.getElementById('themeToggle');
+ const label = document.getElementById('themeLabel');
+ const themeMeta = document.querySelector('meta[name="theme-color"]');
+ const root = document.documentElement;
+ function updateThemeUI(){
+   const dark = root.dataset.theme==='dark';
+   label.textContent = dark ? 'حالت روشن' : 'حالت تاریک';
+   toggle.setAttribute('aria-label',dark?'فعال‌کردن حالت روشن':'فعال‌کردن حالت تاریک');
+   toggle.setAttribute('aria-pressed',String(dark));
+   if(themeMeta) themeMeta.setAttribute('content',dark?'#1b0b37':'#f6f4fa');
+ }
+ toggle.addEventListener('click',()=>{
+   const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+   root.dataset.theme = next;
+   try {localStorage.setItem('endura-theme',next)} catch(e) {}
+   updateThemeUI();
+ });
+ updateThemeUI();
+
+ // These chips submit a real WordPress-compatible site search.
+ const form=document.querySelector('.finder-search');
+ const field=document.getElementById('searchTerm');
+ document.querySelectorAll('[data-search]').forEach(button=>{
+   button.addEventListener('click',()=>{
+     field.value=button.dataset.search;
+     location.href='./#/search?q='+encodeURIComponent(field.value);
+   });
+ });
+})();</script>
+</body>
+</html>
