@@ -1,0 +1,13 @@
+Endura Battery — نسخه متصل به Supabase
+
+۱) پوشه را در ریشه GitHub repository قرار بده؛ index.html باید در ریشه باشد.
+۲) در Supabase SQL Editor: فایل 20261029000000_endura_initial.sql (فقط اگر جداول قبلاً ساخته نشده‌اند)، سپس 20261030000000_live_catalog_cms_hardening.sql اجرا کن.
+۳) اگر ۱۲۴ محصول هنوز در products نیست: supabase/seeds/02_import_catalog_124_ONCE.sql را یک بار اجرا کن.
+۴) در Authentication > Users کاربر مدیر بساز. فایل 03_grant_admin_template.sql را با ایمیل واقعی ویرایش و اجرا کن.
+۵) در GitHub Settings > Pages گزینه GitHub Actions را انتخاب کن.
+۶) سایت را باز کن و از /#/admin وارد حساب مدیر شو. با ویرایش محصول و Refresh مرورگر دیگر ذخیره آنلاین را آزمایش کن.
+
+اتصال فعلی: محصولات، CMS، مقاله، تنظیمات، مناطق پوشش و آپلود تصویر.
+سفارش واقعی، پرداخت، تسویه و پنل عملیاتی عامل در این نسخه هنوز فعال نیست؛ این‌ها به بک‌اند امن نیاز دارند.
+
+جزئیات کامل در README.md است.
