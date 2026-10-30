@@ -35,7 +35,7 @@ export function mountHeroSlider() {
     const layer = document.createElement('div');
     layer.className = 'endura-slide' + (i === 0 ? ' is-active' : '');
     const image = document.createElement('img');
-    image.src = path + String(i+1).padStart(2,'0') + '.webp';
+    image.src = imageFiles[i];
     image.alt = '';
     image.decoding = 'async';
     image.loading = i === 0 ? 'eager' : 'lazy';
